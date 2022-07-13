@@ -1,0 +1,41 @@
+<!--<button routerLink="">Danh sách</button>-->
+<!--<p>Thêm Tours</p>-->
+<!--<form [formGroup]="form" (submit)="add()">-->
+<!--  <label>Tên tour</label>-->
+<!--  <input type="text" formControlName = "title"><br>-->
+<!--  <label>Giá</label>-->
+<!--  <input type="text" formControlName = "price"><br>-->
+<!--  <label>Mô tả</label>-->
+<!--  <input type="text" formControlName = "description"><br>-->
+<!--  <button>Thêm mới</button>-->
+<!--  <button type="button" routerLink="">Hủy</button>-->
+<!--</form>-->
+
+
+
+<div class="container">
+  <form [formGroup]="form" (submit)="add()">
+    <h1>Thêm Tour mới</h1>
+    <div class="mb-3">
+      <label for="title">Tên Tour</label>
+      <br>
+      <input type="text" formControlName="title" id="title" class="form-control-lg">
+    </div>
+    <div class="mb-3">
+      <label>Giá Tour</label>
+      <br>
+      <input type="text" formControlName="price" id="price" class="form-control-lg">
+    </div>
+    <div class="mb-3">
+      <label for="description">Mô Tả</label>
+      <br>
+      <textarea formControlName="description" id="description" cols="30" rows="10"></textarea>
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-primary">Thêm Tour</button>
+      <a routerLink="" class="btn btn-danger">Thoát</a>
+    </div>
+  </form>
+</div>
+
+
